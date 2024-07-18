@@ -1,0 +1,45 @@
+﻿@model VendingMachineSystem.Models.Purchase.Purchase
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Purchase</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="id" />
+            <div class="form-group">
+                <label asp-for="purchase_no" class="control-label"></label>
+                <input asp-for="purchase_no" class="form-control" />
+                <span asp-validation-for="purchase_no" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="total" class="control-label"></label>
+                <input asp-for="total" class="form-control" />
+                <span asp-validation-for="total" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="puchanse_date" class="control-label"></label>
+                <input asp-for="puchanse_date" class="form-control" />
+                <span asp-validation-for="puchanse_date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

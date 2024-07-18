@@ -1,0 +1,84 @@
+﻿/* Basic styling for the admin panel */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#formFieldsContainer {
+    margin-bottom: 20px;
+}
+
+.form-field {
+    margin-bottom: 10px;
+}
+
+    .form-field label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+.remove-button {
+    cursor: pointer;
+    color: red;
+    margin-left: 10px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .form-field {
+        display: block;
+    }
+
+        .form-field label {
+            margin-bottom: 5px;
+        }
+
+    .remove-button {
+        margin-top: 5px;
+    }
+}
+
+/* Standard color styles */
+body {
+    background-color: #f2f2f2;
+}
+
+h2 {
+    color: #333333;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+
+    button:hover {
+        background-color: #45a049;
+    }
+.form-columns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-field {
+    flex: 0 0 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+/*.form-field {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}*/
+
+.remove-button {
+    color: #ff0000;
+}
+
+
+
